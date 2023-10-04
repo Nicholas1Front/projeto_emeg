@@ -1,0 +1,1186 @@
+/* Code by Nicholas de Oliveira Eugênio */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    margin:0 auto;
+    padding:0 2%;
+    max-width:1280px;
+}
+
+.clear{clear:both;}
+
+.w100{
+    width:100%;
+    float:left;
+}
+
+.w85{
+    width:85%;
+    float:left;
+}
+
+.w80{
+    width:80%;
+    float:left;
+}
+
+.w70{
+    width:70%;
+    float:left;
+}
+
+.w60{
+    float:left;
+    width:60%;
+}
+
+.w40{
+    float: left;
+    width:40%;
+}
+
+.w50{
+    float:left;
+    width:50%;
+}
+
+.w33{
+    float:left;
+    width:33.3%;
+}
+
+.w30{
+    width:30%;
+    float:left;
+}
+
+.w20{
+    width:20%;
+    float:left;
+}
+
+
+.w15{
+    width:15%;
+    float:left;
+}
+
+/*Header*/
+
+header{
+    padding:10px 0;
+    background:#c72c2c;
+    color:white;
+}
+
+.logo{
+    float:left;
+    
+}
+
+.logo a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+.menu{
+    float:right;
+    
+}
+
+.menu ul{
+    list-style-type:none;
+}
+
+.menu li{
+    display:inline-block;
+    margin:5px 10px;
+    font-size:15px;
+
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.selected{
+    font-weight: bold;
+}
+
+/*index.html -> Página inicial Emeg começa aqui*/
+
+/*section main-bg*/
+
+section.main-bg{
+    position: relative;
+    background-image:url(../images/img1.jpg); /*image by-Manitowoc*/
+    width:100%;
+    padding: 250px 0 250px 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+}
+
+section.main-bg > .container{
+    position: relative;
+    z-index: 2;
+}
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-top: -250px;
+    background: rgb(0,0,0,0.7);
+    left:0;
+    right:0;
+}
+
+section.main-bg >.container h2{
+    font-size:45px;
+    text-align: center;
+    color:white;
+    margin-bottom:9px 0;
+}
+
+section.main-bg >.container h3{
+    font-size:25px;
+    text-align: center;
+    color:#e23434;
+    font-weight:normal;
+    margin:8px 0;
+}
+
+.callaction{
+    border:2px solid #c72c2c;
+    padding:7px 0;
+    width:fit-content;
+    margin:20px auto;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.callaction:hover,.callaction:focus{
+    transition:0.5s;
+    background:#c72c2c;
+}
+
+.callaction a{
+    color:#c72c2c;
+    text-decoration: none;
+    font-size:17px;
+    padding:5px 8px;
+    font-weight:bold;
+    transition: 0.5s;
+}
+
+.callaction a:hover,.callaction a:focus{
+    transition:0.5s;
+    color:white;
+}
+
+
+/*section main-serviços*/
+
+section.main-serviços{
+    padding:30px 0;
+    text-align: center;
+}
+
+.line-text{
+	position: relative;
+	display: inline-block;
+    padding-bottom:23px;
+}
+
+.line-text > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 130px;
+	height: 3px;
+	background:#c72c2c;
+    padding-bottom:3px;
+}
+
+.line-text h2{
+    font-size:27px;
+    padding-top:3px;
+}
+
+.group-serviços{
+    padding:25px 0;
+}
+
+.box-single-serviços{
+    padding:0 10px;
+}
+
+.box-single-serviços h2{
+    padding-bottom:7px;
+    color:#c72c2c;
+    font-size:75px;
+}
+
+.box-single-serviços h3{
+    font-weight: normal;
+    padding:8px 0;
+    font-size:32px;
+}
+
+.box-single-serviços p{
+    font-weight: lighter;
+    padding:6px 0;
+    font-size:19px;
+    color: #666666;
+}
+
+.path{
+    width:100%;
+    text-align: right;
+    padding:23px 0;
+}
+
+.path a{
+    font-size:17px;
+    text-decoration: none;
+    color:black;
+    transition: 0.5s;
+}
+
+.path a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    padding-right:3px;
+}
+
+.path b{
+    color:#c72c2c;
+    padding-left:3px;
+    font-size: 17px;
+}
+
+.path i{
+    margin-left:8px;
+
+}
+
+
+/*section clientes*/
+
+section.clientes{
+    padding:30px 0;
+    background-color: rgb(225,225,225);
+}
+
+.clientes-title{
+    float:left;
+    padding:10px 10px;
+    display: block;
+    width:100%;
+}
+
+.clientes-title >.line-text h2{
+    color:#c72c2c;
+}
+
+.clientes-title >.line-text > div{
+    background-color: black;
+}
+
+section.clientes >.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.cliente-wraper {
+    width:25%;
+    padding:20px
+}
+
+.box-single-cliente {
+
+    text-align: center;
+}
+
+.box-single-cliente img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.box-single-cliente a{
+    display:block;
+    color:black;
+    font-size: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight:bold;
+    transition: 0.5s;
+}
+
+.box-single-cliente a:hover{
+    transition: 0.5s;
+    color:#c72c2c;
+}
+
+.flexclientes{
+    width:100%;
+    text-align: right;
+    padding:23px 0;
+}
+
+.flexclientes a{
+    color:#c72c2c;
+}
+
+.flexclientes b{
+    color:black;
+}
+
+/*section localizaçao*/
+
+section.localizaçao{
+    padding:30px 0;
+}
+
+section.localizaçao >.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.localizaçao-title{
+    width:50%;
+    text-align: left;
+}
+
+.localizaçao-title >.line-text{
+    margin:20% 0 0 auto;
+    
+}
+
+.localizaçao-title >.line-text h2{
+    font-size:34px;
+}
+
+.google-location{
+    width: 50%;
+    text-align: right;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:46.25%;
+    position:relative;
+    height:0;
+    border:1px solid #c72c2c;
+    border-radius: 10px;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+    
+}
+
+/*quemsomos.html -> Quem somos -EMEG começa aqui*/
+
+/*section.main-bg-contato*/
+
+section.main-bg-contato{
+    background-image: url(../images/repaircrane.jpg); /*image by- https://wheco.com/2012/02/structural-crane-repairs-the-top-five-reasons-to-consider-a-repair-option/ */
+    padding: 170px 0;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative;
+    width:100%;
+    margin-bottom:17px;
+}
+
+section.main-bg-contato >.container{
+    position: relative;
+    z-index: 2;
+}
+
+section.main-bg-contato >.overlay{
+    z-index: 1;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-top: -170px;
+    background: rgb(0,0,0,0.7);
+    left:0;
+    right:0;
+}
+
+section.main-bg-contato h2{
+    color:#c72c2c;
+    font-size:40px;
+    padding-bottom:13px;
+}
+
+section.main-bg-contato h3{
+    color:white;
+    font-style: italic;
+    font-weight:normal;
+    font-size:19px;
+}
+
+/*section.about*/
+
+section.about{
+   padding:34px 0;
+}
+
+.quemsomos p{
+    font-size:19px;
+    color:#666666;
+    padding:8px 0;
+    font-weight: lighter;
+}
+
+.half-box-quemsomos{
+    margin-top: 25%;
+    transform: translate(0,-25%);
+}
+
+.quemsomos-item img{
+    width:100%;
+}
+
+/*section missao*/
+
+section.missao{
+    margin:25px 0;
+    padding:25px 0;
+    background-color: rgb(225,225,225);
+}
+
+.center-horizontal{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+section.missao >.container p{
+    font-size:19px;
+    color:#c72c2c;
+    padding:8px 0;
+    font-weight: normal;
+}
+
+section.missao >.container b{
+    font-size:19px;
+    color:black;
+    font-weight: bold;
+}
+
+/*section visao/valores*/
+
+section.visao_valores{
+    margin:30px 0;
+    padding:20px 0;
+}
+
+section.visao_valores >.container p{
+    font-size:19px;
+    color:#666666;
+    padding:8px 0;
+    font-weight: lighter;
+}
+
+section.visao_valores >.container b{
+    font-size:19px;
+    color:#c72c2c;
+    font-weight: bold;
+}
+
+.visao,.valores{
+    padding:0 9px;
+    text-align: center;
+}
+
+section.visao_valores >.container >.path {
+    margin-top:10px;
+}
+
+
+/* servico.html começa a partir daqui*/
+
+/*section.main-bg-serviços*/
+
+section.main-bg-serviços{
+    background-image: url(../images/repaircar.jpg); /*image by-https://frotas.localiza.com/_next/image?url=https%3A%2F%2Flocalizafrotas-prd.azurewebsites.net%2Fwp-content%2Fuploads%2Fmanutencao-preventiva.jpg.webp&w=780&q=75 */
+    padding: 160px 0;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative;
+    width:100%;
+    margin-bottom:17px;
+}
+
+section.main-bg-serviços >.container{
+    position: relative;
+    z-index: 2;
+}
+
+section.main-bg-serviços >.overlay{
+    z-index: 1;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-top: -160px;
+    background: rgb(0,0,0,0.7);
+    left:0;
+    right:0;
+}
+
+section.main-bg-serviços h2{
+    color:#c72c2c;
+    font-size:40px;
+    padding-bottom:13px;
+}
+
+section.main-bg-serviços h3{
+    color:white;
+    font-style: italic;
+    font-weight:normal;
+    font-size:19px;
+}
+
+/*section.introduction-serviços*/
+
+section.introduction-serviços{
+    margin:19px 0;
+    padding:20px 0;
+}
+
+.introduction-serviços-img img{
+    width:92%;
+    border-radius: 8%;
+    border:3px solid #c72c2c;
+    margin-top:29%;
+    transform: translate(0,-29%);
+}
+
+.introduction-serviços-text p{
+    font-size:19px;
+    color:#666666;
+    padding:8px 0;
+    font-weight: lighter;
+}
+
+section.introduction-serviços >.container > .path{
+    margin:13px 0;
+    padding:13px 0;
+}
+
+/*section principais-serviços*/
+
+section.principais-serviços{
+    margin:25px;
+    padding:20px 0;
+}
+
+
+.box-single-main-serviços{
+    text-align: center;
+    margin:10px 0;
+    padding:0 15px;
+}
+
+.box-single-main-serviços i{
+    color:#c72c2c;
+    font-size:75px;
+    margin:14px 0;
+    padding:20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.box-single-main-serviços i:hover{
+    color:white;
+    background-color: #c72c2c;
+    transition:0.5s;
+}
+
+.box-single-main-serviços h3{
+    font-size:30px;
+    color:#c72c2c;
+    margin:12px 0;
+}
+
+.box-single-main-serviços p{
+    font-size: 19px;
+    color:#666666;
+    font-weight: lighter;
+}
+
+/* section.diferenciais-serviços */
+
+section.diferenciais-serviços{
+    margin:20px 0;
+    padding:45px 0;
+    background-color: #c72c2c;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.center-text p{
+    font-size:19px;
+    font-weight: lighter;
+    color:white;
+}
+
+.box-single-diferenciais{
+    margin:12px 0;
+    padding: 5px 10px;
+    text-align:center;
+}
+
+.box-single-diferenciais i{
+    color:white;
+    font-size:75px;
+    margin:10px 0;
+    padding:20px 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.box-single-diferenciais i:hover{
+    color:#c72c2c;
+    background-color: white;
+    transition:0.5s;
+}
+
+.box-single-diferenciais h3{
+    font-size:26px;
+    color:white;
+    margin:12px 0;
+    padding:8px 0;
+}
+
+.box-single-diferenciais p{
+    font-size:17px;
+    font-weight: lighter;
+    color:white;
+}
+
+/* section.wish-to-contato */
+
+section.wish-to-contato{
+    margin:20px 0;
+    padding:35px 0;
+}
+
+.half-box-contato-text{
+    margin-top:25%;
+    transform: translate(0, -25%);
+}
+
+.wish-to-contato{
+    padding-right:10px;
+}
+.wish-to-contato-text a{
+    color:#c72c2c;
+    background-color:white;
+    border:1px solid #c72c2c;
+    text-decoration: none;
+    font-size:20px;
+    border-radius: 30px;
+    padding:5px 8px;
+    font-weight:bold;
+    transition: 0.5s;
+}
+
+.wish-to-contato-text a:hover{
+    transition:0.5s;
+    color:white;
+    background-color:#c72c2c;
+}
+
+.wish-to-contato-image{
+    padding-left:10px;
+}
+
+.wish-to-contato-image img{
+    max-width:90%;
+    border-radius:15px;
+    border:1px solid #c72c2c;
+}
+
+/* Página contato.html começa a partir daqui */
+
+/* section.main-bg-página-contato */
+
+section.main-bg-página-contato{
+    background-image: url(../images/contato.jpg);/*Image by <a href="https://pixabay.com/pt/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6370595">Gerd Altmann</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6370595">Pixabay</a>*/
+    padding: 160px 0;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative;
+    width:100%;
+    margin-bottom:17px;
+}
+
+section.main-bg-página-contato >.container{
+    position: relative;
+    z-index: 2;
+}
+
+section.main-bg-página-contato >.overlay{
+    z-index: 1;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-top: -160px;
+    background: rgb(0,0,0,0.7);
+    left:0;
+    right:0;
+}
+
+section.main-bg-página-contato h2{
+    color:#c72c2c;
+    font-size:40px;
+    padding-bottom:13px;
+}
+
+section.main-bg-página-contato h3{
+    color:white;
+    font-style: italic;
+    font-weight:normal;
+    font-size:19px;
+}
+
+/* section.contact-form */
+
+section.contact-form{
+    margin:20px 0;
+    padding:20px 0;
+}
+
+section.contact-form p{
+    font-size:19px;
+    color:#666666;
+    font-weight: lighter;
+}
+
+form{
+    margin:5px 0;
+    padding:20px 0;
+}
+
+.formulário-larg-100{
+    margin-bottom:7px;
+}
+
+form h3{
+    font-size:17px;
+    font-weight:bold;
+    padding-bottom:9px;
+    padding-top:4px;
+    text-align: center;
+}
+
+form input[type="email"] , input[type="text"]{
+    width:100%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    height:50px;
+    padding-left:9px;
+    outline:none;
+}
+
+form input:focus{
+    outline: 1px solid #f74141;
+    box-shadow: #f74141;
+}
+
+form textarea:focus{
+    outline: 1px solid #f74141;
+    box-shadow: #f74141;
+}
+
+form textarea{
+    width:100%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    height:150px;
+    padding-top:10px;
+    padding-left:10px;
+    resize: none;
+}
+
+.button-enviar-contato{
+    text-align: center;
+    margin-top:20px;
+}
+
+form input[type="submit"]{
+    font-size:25px;
+    text-align: center;
+    padding:12px 15px;
+    background-color: #c72c2c;
+    border-radius: 15px;
+    color:white;
+    font-weight: normal;
+    border:none;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+form input[type="submit"]:hover{
+    background-color: #f74141;
+    transition:0.5s;
+    box-shadow: #f74141;
+}
+
+
+/* section.contact-social */
+
+section.contact-social{
+    margin:15px 0;
+    padding:20px 0;
+    color:white;
+    background-color: #c72c2c;
+}
+
+section.contact-social p{
+    font-size:19px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.social-medias{
+    margin:12px 0;
+    padding:14px 0;
+}
+
+.box-single-contato{
+    text-align: center;
+}
+
+.box-single-contato a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    transition:0.5s;
+}
+
+.box-single-contato i{
+    font-size:70px;
+}
+
+.box-single-contato h2{
+    font-size:32px;
+    margin:10px 0;
+    padding:12px 0;
+}
+
+.box-single-contato a:hover{
+    color:black;
+    transition:0.5s;
+}
+
+.contact-email{
+    text-align: center;
+}
+
+.contact-email i{
+    font-size:70px;
+}
+
+.contact-email h2{
+    font-size:32px;
+    margin:10px 0;
+    padding:12px 0;
+}
+
+/* section.youtube-channel */
+
+section.youtube-channel{
+    padding:25px 0;
+}
+
+section.youtube-channel p{
+    font-size:19px;
+    color:#666666;
+    font-weight: lighter;
+    margin-bottom:10px;
+    padding:12px 0;
+    text-align: center;
+}
+
+.youtube-iframe{
+    display:flex;
+    justify-content: center;
+}
+
+.youtube-video{
+    aspect-ratio: 16/9;
+    width:65%;
+    border-radius:15px;
+    border:1px solid #f74141;
+    box-shadow: #f74141;
+}
+
+.youtube-iframe-mobile{
+    display:none;
+}
+
+/*footers*/
+
+.footer1{
+    margin-top:25px;
+    padding:25px 0;
+    background: #c72c2c;
+}
+
+.endereço h1, .midia h1{
+    color:white;
+    text-align: center;
+    font-size:20px;
+    padding-bottom:14px;
+}
+
+.endereço h2{
+    font-size:15px;
+    color:white;
+    font-weight:normal;
+    padding:6px 0;
+}
+
+.endereço i{
+    padding:0 5px;
+}
+
+.midia a{
+    font-size:15px;
+    color:white;
+    font-weight:normal;
+    padding:6px 0;
+    text-decoration:none;
+    display:block;
+    margin:auto 0;
+}
+
+.midia a:hover{
+    text-decoration: underline;
+    transition:1s;
+}
+
+.midia i{
+    padding:0 5px;
+    font-size:18px;
+}
+
+.footer2{
+    background:#a82626;
+}
+
+.footer2 h3{
+    font-size:14px;
+    color:white;
+    font-weight: lighter;
+    text-align: center;
+    padding:9px 0;
+}
+
+/*Responsivo tablet*/
+
+@media screen and (max-width:768px){
+    .logo{
+        width:100%;
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+    .menu{
+        width:100%;
+        text-align: center;
+    }
+
+    /*Responsivo index.html*/
+
+    .box-single-serviços{
+        width:100%;
+        margin:14px 0;
+    }
+
+    .cliente-wraper{
+        width:50%;
+    }
+
+    .endereço,.midia{
+        width:100%;
+        text-align: center;
+        margin:5px 0;
+    }
+
+    .localizaçao-title,.google-location{
+        width:100%;
+        text-align: center;
+    }
+
+    .localizaçao-title >.line-text{
+        margin:10% auto;
+    }
+
+    /*Responsivo quemsomos.html*/
+
+    .quemsomos,.quemsomos-item{
+        width:100%;
+    }
+
+    .half-box-quemsomos{
+        margin-top:10%;
+        transform: translate(0,-10%);
+    }
+
+    .valores,.visao{
+        width:100%;
+        margin:13px 0;
+    }
+
+    .valores >.center-horizontal{
+        justify-content: left;
+    }
+
+    .visao >.center-horizontal{
+        justify-content: left;
+    }
+
+    /* Responsivo servicos.html */
+
+    .introduction-serviços-img{
+        width:100%
+    }
+
+    .introduction-serviços-img img{
+        margin-left:5%;
+    }
+
+    .introduction-serviços-text{
+        width:100%;
+    }
+
+    .box-single-main-serviços{
+        width:100%;
+    }
+
+    .box-single-diferenciais{
+        width:100%;
+        padding:10px 8px;
+    }
+
+    .half-box-contato-text{
+        margin-top:7%;
+    }
+
+    .wish-to-contato-text,.wish-to-contato-image{
+        width:100%;
+    }
+
+    /* Responsivo contato.html */
+
+
+    .box-single-contato{
+        width:100%;
+        padding:10px 0;
+    }
+
+    .youtube-video{
+        aspect-ratio: 8/5;
+        width:85%;
+    }
+    
+}
+
+/* Responsivo celular */
+
+@media screen and (max-width:568px){
+
+    /* Responsivo quemsomos.html */
+
+    .quemsomos{
+        text-align: center;
+        padding:0 2px;
+    }
+
+    section.missao{text-align:center;}
+
+    section.visao_valores >.container >.path{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.visao_valores >.container >.path i{
+        padding-left: 2px;
+        margin-left:0;
+    }
+
+    /* Responsivo servico.html */
+
+    .introduction-serviços-text{
+        text-align: center;
+    }
+
+    .wish-to-contato-text >.half-box-contato-text>.center-horizontal>.line-text h2{
+        text-align: center;
+    }
+
+    .wish-to-contato-text >.half-box-contato-text>.center-horizontal>.line-text div{
+        padding-left:26px;
+    }
+
+    /* Responsivo contato.html */
+
+    .youtube-iframe{
+        display: none;
+    }
+
+    .youtube-iframe-mobile{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+
+    .youtube-video{
+        aspect-ratio:8/5;
+        width:90%;
+    }
+}
