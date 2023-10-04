@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Code by Nicholas de Oliveira Eugênio -->
+
+    <title>Contato - EMEG</title>
+    <script src="https://kit.fontawesome.com/8bf43e84bd.js" crossorigin="anonymous"></script>
+    <link href="estilo/style.css" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="images/EMEG.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+
+                <a href="index.html">EMEG</a>
+
+           </div><!--logo-->
+
+           <div class="menu">
+
+                <ul>
+
+                    <li><a href="index.html">Página inicial </a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li class="selected"><a href="contato.html">Contato</a></li> <!--selected-->
+
+                </ul>
+
+           </div><!--menu-->
+
+           <div class="clear"></div>
+
+        </div><!--container-->
+
+    </header><!--header-->
+
+    <section class="main-bg-página-contato">
+
+        <div class="overlay"></div>
+
+        <div class="container">
+
+            <h2>Contato</h2>
+
+            <h3>“Não se trata de ter ideias, mas sim de levar essas ideias para a vida real.” — Scott Belsky</h3>
+
+        </div><!--container-->
+
+    </section><!--main-bg-página-contato-->
+
+   <section class="contact-form">
+
+        <div class="container">
+
+            <div class="line-text">
+
+                <div style="width:103px;"></div>
+
+                <h2>Entre em contato conosco</h2>
+
+            </div><!--line-text-->
+
+            <p>Através dessa página você pode escolher a melhor maneira de nos contatar! Sinta-se a vontade para escolher qualquer opção!</p>
+
+            <div class="center-horizontal">
+
+                <form  id="formulário" action="https://formspree.io/f/xbjvzkoy" method="POST">
+
+
+                    <div class="w100 formulário-larg-100">
+
+                        <h3>Digite seu nome completo</h3>
+
+                        <input type="text" name="name" autocomplete="off" placeholder="Digite seu nome completo..." required/>
+                        
+                    </div><!--w100 formulário-larg-100-->
+
+                    <div class="w100 formulário-larg-100">
+
+                        <h3>Digite seu telefone</h3>
+
+                        <input type="text"  autocomplete="off"  maxlength="9" name="phone" placeholder="Digite seu telefone..." required />
+                        
+                    </div><!--w100 formulário-larg-100-->
+
+                    <div class="w100 formulário-larg-100">
+
+                        <h3>Digite seu email</h3>
+
+                        <input type="email" autocomplete="off" name="email" placeholder="Digite seu email..." required />
+                        
+                    </div><!--formulário-larg-100-->
+
+                    <div class="w100 formulário-larg-100">
+
+                        <h3>Digite sua mensagem</h3>
+
+                        <textarea  name="message" placeholder="Digite sua mensagem..." required></textarea>
+                        
+                    </div><!--formulário-larg-100-->
+
+                    <div class="button-enviar-contato">
+
+                        <input type="submit" value="ENVIAR" />
+                        
+                    </div><!--button-enviar-contato-->
+
+                </form>
+
+            </div><!--center-horizontal-->
+
+        </div><!--container-->
+
+   </section><!--contact-form-->
+
+   <section class="contact-social">
+
+        <div class="container">
+
+            <div class="center-horizontal">
+
+                <div class="line-text">
+
+                    <div style="width:103px;background-color: black;"></div>
+
+                    <h2>Ou se prefirir nos contate diretamente!</h2>
+
+                </div><!--line-text-->
+
+            </div><!--center-horizontal-->
+
+            <p>Não quer entrar em contato conosco através do formulário acima ? Você pode entrar em contato conosco atráves dos canais de comunicação abaixo:</p>
+
+            <div class="social-medias">
+
+                <div class="w50 box-single-contato">
+
+                    <a href="https://wa.me/5598982225636?text=Ol%C3%A1+%21+Vim+atrav%C3%A9s+do+website" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    <a href="https://wa.me/5598982225636?text=Ol%C3%A1+%21+Vim+atrav%C3%A9s+do+website" target="_blank"><h2>Whatsapp</h2></a>
+                    
+                </div><!--w50 box-single-contato-->
+
+                <div class="w50 box-single-contato">
+
+                    <a href="https://instagram.com/emeg_guindaste?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="https://instagram.com/emeg_guindaste?igshid=NjIwNzIyMDk2Mg==" target="_blank"><h2>Instagram</h2></a>
+                    
+                </div><!--w50 box-single-contato-->
+
+                <div class="clear"></div>
+
+            </div><!--social-medias-->
+
+            <div class="contact-email">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h2>contato.emeg.web@gmail.com</h2>
+
+            </div><!--contact-email-->
+
+        </div><!--container-->
+
+   </section><!--contact-social-->
+
+   <section class="youtube-channel">
+
+        <div class="container">
+
+            <div class="center-horizontal">
+
+                <div class="line-text">
+
+                    <div style="width:103px;"></div>
+
+                    <h2>Visite nosso canal no youtube!</h2>
+
+                </div><!--line-text-->
+
+            </div><!--center-horizontal-->
+
+            <p>No nosso canal no YouTube, oferecemos uma variedade de vídeos informativos, tutoriais práticos e dicas valiosas relacionadas à manutenção e reparo de equipamentos pesados. Se você está interessado em aprender como cuidar, consertar e aprimorar essas máquinas robustas, convidamos você a se inscrever no nosso canal. Junte-se a nós para explorar o vasto universo da mecânica de máquinas pesadas</p>
+
+            <div class="youtube-iframe">
+
+                <iframe class="youtube-video"src="https://www.youtube.com/embed/Qtvz6hT-6jo" title="Manutenção  guindaste SANY ETC 800" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div><!--youtube-iframe-->
+
+            <div class="youtube-iframe-mobile">
+ 
+                <iframe class="youtube-video"src="https://www.youtube.com/embed/Qtvz6hT-6jo" title="Manutenção  guindaste SANY ETC 800" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div><!--youtube-iframe-mobile-->
+
+        </div><!--container-->
+
+    </section><!--youtube-channel-->
+
+    <footer class="footer1">
+
+        <div class="container">
+
+            <div class="w50 endereço">
+
+                <h1>Nossos contatos</h1>
+
+                <h2><i class="fa-solid fa-location-dot"></i>Av. Três, Nº 214, Q. 145, Jrd.São Cristóvão-São Luis-MA, CEP:65055-315</h2>
+                <h2><i class="fa-brands fa-whatsapp"></i></i>(98)98201-4888 / (98) 98222-5636</h2>
+                <h2><i class="fa-solid fa-envelope"></i>contato.emeg.web@gmail.com</h2>
+
+            </div><!--w33 endereço-->
+
+            <div class="w50 midia">
+
+                <h1>Visite nossas redes sociais!</h1>
+
+                <a href="https://instagram.com/emeg_guindaste?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i>emeg_guindaste</a>
+
+                <a href="https://www.youtube.com/@emegeugeniomaquinaseguinda1480/featured" target="_blank"><i class="fa-brands fa-youtube"></i>EMEG EUGENIO MÁQUINAS E GUINDASTES</a>
+
+            </div><!--w50 midia-->
+
+            <div class="clear"></div>
+            
+        </div><!--container-->
+
+    </footer><!--footer1-->
+
+    <footer class="footer2">
+
+        <div class="container">
+
+            <h3>Todos os direitos reservados</h3>
+
+        </div><!--container-->
+
+    </footer><!--footer2-->
+
+</body>
+
+</html>
